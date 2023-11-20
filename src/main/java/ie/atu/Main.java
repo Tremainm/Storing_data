@@ -1,6 +1,7 @@
 package ie.atu;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class Main {
@@ -10,15 +11,15 @@ public class Main {
 
         File myFile = new File(fileName);
 
+
         try {
-            if(myFile.createNewFile())
-            {
-                System.out.println("File created successfully at " + myFile.getAbsolutePath());
-            }
-            else
-            {
-                System.out.println("File already exists at " + myFile.getAbsolutePath());
-            }
+            FileWriter myFile2 = new FileWriter(fileName);
+
+                System.out.println("Writing data to file.");
+                myFile2.write("This is new data that i have typed.");
+                myFile2.close();
+
+                System.out.println("File length: " + myFile.length());
 
         }
         catch (IOException e){
