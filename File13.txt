@@ -1,1 +1,2 @@
-This is new data that i have typed.This is new data that i have typed.after i added boolean statement.
+after i added boolean statement.This line will be appended
+Appended formatted content: 42 example
