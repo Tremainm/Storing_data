@@ -13,10 +13,10 @@ public class Main {
 
 
         try {
-            FileWriter myFile2 = new FileWriter(fileName);
+            FileWriter myFile2 = new FileWriter(fileName, true);
 
                 System.out.println("Writing data to file.");
-                myFile2.write("This is new data that i have typed.");
+                myFile2.write("after i added boolean statement.");
                 myFile2.close();
 
                 System.out.println("File length: " + myFile.length());
